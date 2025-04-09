@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background-color: #E6EFF5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.card-container {
+  background: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-width: 40rem;
+  box-shadow: 0 1rem 2rem rgba(0, 81, 171, 0.15);
+}
+
+.hero {
+  padding: 2rem 1.5rem;
+  background: #fff;
+}
+
+.hero-title {
+  color: #2AB3B1;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  color: #C0DF33;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.hero-description {
+  color: #9AA7BE;
+  font-size: 1rem;
+  margin-top: 1rem;
+  line-height: 1.625rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing {
+  background-color: #2AB3B1;
+  color: #fff;
+  padding: 2rem 1.5rem;
+}
+
+.pricing-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.pricing-cost {
+  display: flex;
+  align-items: baseline;
+  margin: 1rem 0;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.025rem;
+}
+
+.price-period {
+  font-size: 1rem;
+  opacity: 0.6;
+  margin-left: 0.5rem;
+}
+
+.pricing-info {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  background-color: #C0DF33;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  padding: 0.75rem;
+  width: 100%;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0.625rem 0.625rem rgba(0, 0, 0, 0.10);
+  cursor: pointer;
+}
+
+.features {
+  background-color: #4BBFBD;
+  color: #fff;
+  padding: 2rem 1.5rem;
+  opacity: 0.9;
+}
+
+.features-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.features-list {
+  list-style: none;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding-left: 0;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .card-content {
+    flex-direction: row;
+  }
+
+  .pricing, .features {
+    flex: 1;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+  }
+}
